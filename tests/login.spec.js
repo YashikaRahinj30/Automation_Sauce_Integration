@@ -15,3 +15,11 @@ test.only('Login With Invalid userName', async ({ page }) => {
     await page.getByPlaceholder("Password").fill(password);
     await page.locator("//input[@id='login-button']").click();
 });
+
+
+
+const { test } = require('@playwright/test');
+
+test('open page', async ({ page }) => {
+  await page.goto('https://example.com');
+});
